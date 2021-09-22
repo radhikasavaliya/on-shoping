@@ -1,0 +1,1051 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>on-shop</title>
+		<style>
+			.nav{
+				
+			}
+
+			ul{
+				background-color:  rgb(242, 242, 242);
+				list-style-type: none;
+				padding: 10px;
+				font-family: Schadow BT;
+				position: fixed;
+				margin-top: -5px;
+			}
+
+			li{
+				float: left;
+				position: sticky;
+			}
+
+			li a{
+				display: block;
+				text-decoration: none;
+				color: black;
+			}
+
+			.a2:hover{
+				background-color: black;
+				color: white;
+			}
+
+			.ul1{
+				background-color: black;
+				list-style-type: none;
+				padding: 10px;
+				font-family: Schadow BT;
+				position: fixed;
+				float: left;
+				margin-left: 23PX;
+				margin-top: 65px;
+				margin-bottom: 100px;
+				height: 20px;
+			}
+
+			.li1{
+				font-family: Schadow BT;
+				padding-right: 80px;
+				font-size: 15px;
+				float: left;
+			}
+
+			.a1{
+				color: white;
+			}
+
+			.dropdown{
+				
+				float: right;
+			}
+
+			.dropdo a{
+				background-color: rgba(242, 242, 242, 0.5);
+				color: black;
+				text-decoration: none;
+				float: right;
+				padding: 10px;
+				display: block;
+			}
+
+			.dropdo{
+				display: none;
+				margin-left: -30px;
+			}
+
+			.dropdown:hover .dropdo{
+				display: block;
+			}
+
+			@keyframes mychange{
+
+
+				0%{
+					background-image: url("img/1.jpg");
+				}
+				40%{
+					background: url("img/2.jpg");
+				}
+				60%{
+					background: url("img/3.jpg");
+				}
+				100%{
+					background-image: url("img/4.jpg");
+
+				}
+
+			}
+
+			.rightscroll{
+				display: flex;
+				overflow-x: auto;
+				width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.rightscroll .item{
+				width: 140px;
+				height: 150px;
+				padding-right: 120px;
+			}
+
+			.body3{
+				margin-top: 100px;
+				background-color:rgb(242, 242, 242) ;
+				border-radius: 20px;
+				color: black;
+				padding: 20px;
+				float: left;
+				width: 100%;
+				margin-bottom: 100px;
+			}
+
+			.body4{
+				background-color: rgb(230, 230, 255) ;
+				margin-left: auto;
+				width: 900px;
+				height: 270px;
+				border-radius: 20px;
+				color: black;
+				padding-left: 20px;
+				padding-bottom: 2px;
+				float: right;
+				overflow-y: auto;
+			}
+
+			.body5{
+				float: right;
+				margin-top: -40px;
+				margin-right: 40px;
+				background-color: orange;
+				border-radius: 70px;
+				padding: 10px;
+			}
+
+			.body6{
+				display: none;
+			}
+
+			.b1:hover .body6{
+				diaplay: block;
+				
+			}
+
+			.body7{
+				margin-top: 80px;
+				color: black;
+				font-family: SimSun-ExtB ;
+			}
+
+			.root{
+
+				margin-top: 30px;
+				
+			}
+
+			.squar{
+
+				width: 250px;
+				height: 250px;
+				background-color: rgb(217, 217, 217);
+				border-radius: 10px;
+				float: left;
+				margin-top: 30px;
+
+				
+			}
+
+			.squar:hover{
+				
+				box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.9);
+
+			}
+
+			.squar-det{
+				color: black;
+				text-align: center;
+				float: left;
+			}
+
+			.body8{
+				border: 5px solid orangered;
+				float: left;
+				padding: 40px;
+				margin-bottom: 100px;
+				background-color: white;
+			}
+
+			.body9{
+				text-align: center;
+				margin-top: 100px;
+			}
+
+			.squar1{
+
+				width: 250px;
+				height: 350px;
+				background-color: rgb(217, 217, 217);
+				border-radius: 10px;
+				float: left;
+				margin-top: 30px;
+
+				
+			}
+
+			.squar1:hover{
+				
+				box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.9);
+			}
+			
+			.body10{
+				background-color: black;
+				color: white;
+				font-family: SimSun-ExtB;
+				text-align: center;
+				margin-bottom: 100px;
+			}
+
+			.body11{
+				text-align: center;
+				color: black;
+				margin-left: auto;
+				margin-right: auto;
+				font-family: SimSun-ExtB;
+				background-color: rgba(77, 50, 103,0.4);
+				padding-top: 20px;
+				padding-bottom: 30px;
+			}
+
+			.footer{
+				color: black;
+				text-align: center;
+				padding-top: 30px;
+			}
+
+			.f1{
+				float: left;
+				text-align: center;
+				padding-right: 155px;
+				padding-left: 155px;
+			}
+
+			.footer1{
+				color: black;
+				margin-top: 50px;
+				margin-bottom: 50px;				
+			}
+
+			.f2{
+				float: left;
+				background-color: orange;
+				padding-right: 130px;
+				padding-left: 150px;
+				padding-top: 10px;
+			}
+
+			.f{
+				float: left;
+				margin-top: -2px;
+				text-align: center;
+				padding-right: 10px;
+			}
+
+			.f3{
+				float: left;
+				padding-right: 113px;
+				padding-left: 5px;
+			}
+
+			.footer3{
+				margin-left: 130px;
+				float: left;
+				background-color: black;
+				color: white;
+			}
+
+			.fo{
+				color: white;
+				display: none;
+				border: 2px solid orangered;
+				text-align: center;
+				background-color: goldenrod;
+				width: 140px;
+				
+			}
+			.dropdown1:hover .fo{
+				display: block;
+			}
+
+			.dropdown1{
+				float: left;
+			}
+
+			.foo1{
+				color: white;
+				display: none;
+				text-align: center;
+				border: 2px solid orangered;
+				background-color: goldenrod;
+			}
+
+			.dropdown2:hover .foo1{
+				display: block;
+			}
+
+			.dropdown2{
+				float: left;
+			}
+
+			.foo2{
+				color: white;
+				display: none;
+				text-align: center;
+				border: 2px solid orangered;
+				background-color: goldenrod;
+			}
+
+			.dropdown3:hover .foo2{
+				display: block;
+			}
+
+			.dropdown3{
+				float: left;
+			}
+
+			.foo3{
+				color: white;
+				display: none;
+				text-align: center;
+				border: 2px solid orangered;
+				background-color: goldenrod;
+			}
+
+			.dropdown4:hover .foo3{
+				display: block;
+			}
+
+			.dropdown4{
+				float: left;
+			}
+
+			.foo4{
+				color: white;
+				display: none;
+				text-align: center;
+				border: 2px solid orangered;
+				background-color: goldenrod;
+			}
+
+			.dropdown5:hover .foo4{
+				display: block;
+			}
+
+			.dropdown5{
+				float: left;
+			}
+
+			.foo5{
+				color: white;
+				display: none;
+				border: 2px solid orangered;
+				text-align: center;
+				background-color: goldenrod;
+			}
+
+			.dropdown6:hover .foo5{
+				display: block;
+			}
+
+			.dropdown6{
+				float: left;
+			}
+s
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="store.html"><img src="https://img.icons8.com/ios-glyphs/30/000000/online-store.png" width="25px"></a></li>
+			<li><a href="store.html" style="padding-left: 5px;padding-right: 20px;">All-Store</a></li>
+			<li><a href="contect.html"><img src="https://img.icons8.com/ios/50/000000/man-raising-hand-icon.png"/ width="25px"></a></li>
+			<li><a href="contect.html" style="padding-left: 5px;">Contect-Us</a></li>
+			<li style="margin-left: 360px;font-size: 25px;background-color: black;color: white;margin-top: -5px;padding: 2px;">On - Shopping</li>
+			<li><a href="#"><img src="https://img.icons8.com/ios/50/000000/like--v2.png"/ width="25px" style="padding-left: 400px"></a></li>
+			<li><a href="card.html"><img src="https://img.icons8.com/material-rounded/24/000000/favorite-cart.png"/ width="25px" style="padding-left:15px"></a></li>
+			<div class="dropdown">
+				<li class="drop"><a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/test-account.png"/ width="25px" style="padding-left:28px;padding-right: 65px;"></a></li>
+				<div class="dropdo">
+					<a href="sign_up.html" class="a2">Sign Up</a>
+					<a href="login.html" class="a2">Login</a>
+				</div>
+			</div>
+		</ul>
+	<div class="nav1">
+		<ul class="ul1">
+			<div class="dropdown1">
+				<li class="li1"><a href="#" class="a1">MAN</a></li>
+				<div>
+					<br>
+				</div>
+				<div class="fo">
+					<h6>Clothing</h6>
+					<h6>Accessories</h6>
+					<h6>Footwear</h6>
+					<h6>Sunglasses & Frames</h6>
+					<h6>Watches</h6>
+					<h6>Men's Fragrances</h6>
+					<h6>Grooming For Men</h6>
+					<h6>Jewellery</h6>
+				</div>
+			</div>
+			<div class="dropdown2">
+				<li class="li1"><a href="#" class="a1">WOMAN</a></li>
+				<div>
+					<br>
+				</div>
+				<div class="foo1">
+					<h6>Indian wear</h6>
+					<h6>Western wear</h6>
+					<h6>Lingerie & Night Wear</h6>
+					<h6>Footwear</h6>
+					<h6>Women's Fragrances</h6>
+					<h6>Bags & Wallets</h6>
+					<h6>Watches</h6>
+					<h6>Sunglasses & Frames</h6>
+					<h6>Jewellery</h6>
+				</div>
+			</div>
+				<div class="dropdown3">
+				<li class="li1"><a href="#" class="a1">KID</a></li>
+				<div>
+					<br>
+				</div>
+				<div class="foo2">
+					<h6>Boys</h6>
+					<h6>Girls</h6>
+					<h6>Infants</h6>
+					<h6>Toys</h6>
+					<h6>School Essential</h6>
+					<h6>Footwear</h6>
+					<h6>Watches</h6>
+					<h6>Accessories</h6>
+					<h6>ucb</h6>
+				</div>
+			</div>
+			<div class="dropdown4">
+				<li class="li1"><a href="#" class="a1">BEAUTY</a></li>
+				<div>
+					<br>
+				</div>
+				<div class="foo3">
+					<h6>Make Up</h6>
+					<h6>Skincare</h6>
+					<h6>Bath & Body</h6>
+					<h6>Nails</h6>
+					<h6>Haircare</h6>
+					<h6>Tools & Accessories</h6>
+					<h6>Women's Fragrances</h6>
+					<h6>Men's Fragrances</h6>
+					<h6>Grooming For Men</h6>
+					<h6>Personal Hygiene</h6>
+				</div>
+			</div>
+			<div class="dropdown5">
+				<li class="li1"><a href="#" class="a1">BEAUTY</a></li>
+				<div>
+					<br>
+				</div>
+				<div class="foo4">
+					<h6>Kitchen & Dining</h6>
+					<h6>Decor</h6>
+					<h6>Home Furnishing</h6>
+					<h6>Storage & Organization</h6>
+					<h6>Smart Home and Appliances</h6>
+					<h6>Bath</h6>
+					<h6>Bedding</h6>
+					<h6>Furniture</h6>
+				</div>
+			</div>
+			<div class="dropdown6">
+				<li class="li1"><a href="#" class="a1">ELECTRONIC</a></li>
+				<div>
+					<br>
+				</div>
+				<div class="foo5">
+					<h6>Phone</h6>
+					<h6>Laptop</h6>
+					<h6>Hadephone</h6>
+					<h6>Earbirds</h6>
+					<h6>Smart watch</h6>
+					<h6>Ipad</h6>
+					<h6>Tablates</h6>
+				</div>
+			</div>
+			
+			<li class=""><input type="text" size="60px" placeholder="Search here..." style="border-radius: 10px;"></li>
+			<li class=""><img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/ffffff/external-search-smart-farm-vitaliy-gorbachev-fill-vitaly-gorbachev.png"/ width="20px"></li>
+		</ul>
+	</div>
+
+	<div style="animation: mychange 20s infinite;width: 100%;height: 600px;"></div>
+	<div>
+	</div>
+
+	<h1 style="text-align: center;margin-top: 100px;margin-bottom: 60px;color: black;font-family: SimSun-ExtB;">All Brands Are Here</h1>
+	<div class="rightscroll">
+		<div><img src="img/l1.png" class="item"></div>
+		<div><img src="img/l2.png" class="item"></div>
+		<div><img src="img/l3.png" class="item"></div>
+		<div><img src="img/l4.png" class="item"></div>
+		<div><img src="img/l5.png" class="item"></div>
+		<div><img src="img/l6.png" class="item"></div>
+		<div><img src="img/l7.png" class="item"></div>
+	</div>
+
+	<div class="root">	
+		<div class="squar">	
+			<div class="squar-det">
+				<img src="img/p9.png" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p2.jpg" width="250px" hight="300" style="border-radius: 10px;">
+					<p>samsung galaxy</p>
+						<hr>
+				<button id="d1" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p3.jpg" width="250px" hight="100px" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d2" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p4.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d3" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p10.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d4" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<button id="s1" style="padding: 20px;margin-top: 40px;border-radius: 20px;margin-left: 570px;">Check More Product..</button>	
+	</div>
+
+
+	<div class="body3">
+		<img src="img/img1.jpg" width="30%" height="35%" style="border-radius: 20px;">
+		<div class="body4">
+				<h2 style="font-family: SimSun-ExtB;">Get On-Shopping Card</h2>
+					<p>
+						To apply for a Shopping Credit Card, you can either walk into your chosen lender's nearest branch and submit the application along with the required documentation, or you can apply online. You can also call their customer care for help with the application process.
+					</p>
+					<p>
+						To apply for a Shopping Credit Card, you can either walk into your chosen lender's nearest branch and submit the application along with the required documentation, or you can apply online. You can also call their customer care for help with the application process.
+					</p>
+				<h2>Detail Of Offers On Payment</h2>
+					<P>Available offers</P>
+
+					<p>Special PriceGet extra 8% off (price inclusive of discount)T&C</p>
+					<p> Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</p>
+					<p>Bank Offer10% Off on Bank of Baroda Mastercard debit card first time transaction, Terms and Condition applyT&C</p>
+					<p>Bank Offer10% Off on First time ICICI Bank Mastercard Credit Card transaction, TnC ApplicableT&C</p>
+			<button style="float: right;">Read more...</button>
+		</div>
+	</div>
+
+	<div class="body7">
+		<h1 style="text-align: center;margin-top: 100px;">Over Eco Friendly Product</h1>
+		<img src="img/12.jpg" width="1333px">
+	</div>
+
+	<div class="root">	
+		<div class="squar">	
+			<div class="squar-det">
+				<img src="img/s1.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d5" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p2.jpg" width="250px" hight="300" style="border-radius: 10px;">
+					<p>samsung galaxy</p>
+						<hr>
+				<button id="d6" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p6.jpg" width="250px" hight="100px" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d7" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;border-color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p4.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d8" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;;border-color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p5.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d9" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+	</div>
+
+	<div class="root">	
+		<div class="squar">	
+			<div class="squar-det">
+				<img src="img/s1.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d10" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p8.jpg" width="250px" hight="300" style="border-radius: 10px;">
+					<p>samsung galaxy</p>
+						<hr>
+				<button id="d11" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p3.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d12" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p4.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d13" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/p7.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d14" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<button id="s2" style="padding: 20px;margin-top: 40px;border-radius: 20px;margin-left: 570px;">Check More Product..</button>	
+	</div>
+	<hr>
+
+	<div class="body8">
+		<img src="img/5.jpg">
+		<img src="img/7.jpg" style="width: 610px;height: 500px;">
+		<button style="padding: 20px;margin-top: 40px;border-radius: 20px;margin-left: 570px;">Shop Now</button>
+	</div>
+
+	<div class="body10">
+		<h1>ELECTRONIC DEVICE COLLECTION</h1>
+		<img src="img/10.jpg">
+		<div class="root">	
+		<div class="squar1">	
+			<div class="squar-det">
+				<img src="img/s1.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d15" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s2.jpg" width="250px" hight="300" style="border-radius: 10px;">
+					<p>samsung galaxy</p>
+						<hr>
+				<button id="d16" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s3.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d17" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s4.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d18" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s5.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d19" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<button id="s3" style="padding: 20px;margin-top: 40px;border-radius: 20px;">Check More Product..</button>	
+	</div>
+</div>
+
+	<div class="body11">
+			<h1>WOMAN'S COLLECTIONS</h1>
+			<img src="img/9.jpg" style="width: 900px;margin-top: 50px;">
+			<div class="root">	
+		<div class="squar1">	
+			<div class="squar-det">
+				<img src="img/s9.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d20" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s12.jpg" width="250px" hight="300" style="border-radius: 10px;">
+					<p>samsung galaxy</p>
+						<hr>
+				<button id="d21" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s7.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d22" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s4.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d23" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>	
+		<div class="squar1" style="margin-left: 20px">
+			<div class="squar-det">
+				<img src="img/s5.jpg" width="250px" hight="300" style="border-radius: 10px;">
+				<p>samsung galaxy</p>
+				<hr>
+				<button id="d24" style="background: linear-gradient(to bottom, #ff0066 0%, #ff0000 111%);border-color: white;padding: 5px;border-radius: 10px;color: white;">Click To more..</button>
+			</div>
+		</div>
+		<button id="s4" style="padding: 20px;margin-top: 40px;border-radius: 20px;">Check More Product..</button>	
+	</div>
+		
+	</div>
+
+	<div class="footer1">
+		<div class="f2">
+			<h5>Download The App</h5>
+			<div class="fo2">
+				<img src="img/i1.png" width="100px" style="margin-top: -2px">
+			</div>
+		</div>
+		<div class="f2">
+			<div class="f">
+				<img src="img/i2.png" width="20px">
+				<div>
+					<h6>authentication</h6>
+				</div>
+			</div>
+			<div class="f">
+				<img src="https://img.icons8.com/dotty/80/000000/free-shipping.png"/ width="20px">
+				<div>
+					<h6>free delivary</h6>
+				</div>
+			</div>
+			<div class="f">
+				<img src="https://img.icons8.com/ios/50/000000/exchange-dollar.png"/ width="20px">
+				<div>
+					<h6>Exchange</h6>
+				</div>
+			</div>
+		<div class="f2">
+			<h5 style="margin-top: -3px;margin-left: 90px;">Follow Us</h5>
+			<div class="fo2" style="margin-left: 85px;">
+				<img src="https://img.icons8.com/plumpy/24/000000/facebook--v1.png"/ width="30px">
+				<img src="https://img.icons8.com/plumpy/24/000000/twitter.png"/ width="30px">
+				<img src="https://img.icons8.com/plumpy/24/000000/instagram-new--v2.png"/ width="30px">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="f1">
+			<div>
+				<h5>QUESTION</h5>
+				<a href="#">onshoppingSolution.com</a>
+			</div>
+		</div>	
+		<div class="f1">
+			<h5>VERIFIED BY</h5>
+			<div class="fo1">
+				<img src="img/i3.jpg" width="100px" style="margin-top: -10px">
+			</div>
+		</div>
+		<div class="f1">
+			<h5>PAY SECURELY BY</h5>
+			<div>
+				<img src="https://img.icons8.com/color-glass/48/000000/visa.png"/ style="margin-top: -10px">
+			</div>
+		</div>
+	</div>
+
+	<div class="footer2">
+		<div class="f3">
+			<h4><b>MAN</b></h4>
+			<div class="fo3">
+				<h6>Clothing</h6>
+				<h6>Accessories</h6>
+				<h6>Footwear</h6>
+				<h6>Sunglasses & Frames</h6>
+				<h6>Watches</h6>
+				<h6>Men's Fragrances</h6>
+				<h6>Grooming For Men</h6>
+				<h6>Jewellery</h6>
+			</div>
+		</div>
+		<div class="f3">
+			<h4><b>WOMAN</b></h4>
+			<div class="fo3">
+				<h6>Indian wear</h6>
+				<h6>Western wear</h6>
+				<h6>Lingerie & Night Wear</h6>
+				<h6>Footwear</h6>
+				<h6>Women's Fragrances</h6>
+				<h6>Bags & Wallets</h6>
+				<h6>Watches</h6>
+				<h6>Sunglasses & Frames</h6>
+				<h6>Jewellery</h6>
+			</div>
+		</div>
+		<div class="f3">
+			<h4><b>KID</b></h4>
+			<div class="fo3">
+				<h6>Boys</h6>
+				<h6>Girls</h6>
+				<h6>Infants</h6>
+				<h6>Toys</h6>
+				<h6>School Essential</h6>
+				<h6>Footwear</h6>
+				<h6>Watches</h6>
+				<h6>Accessories</h6>
+				<h6>ucb</h6>
+			</div>
+		</div>
+		<div class="f3">
+			<h4><b>BEAUTY</b></h4>
+			<div class="fo3">
+				<h6>Make Up</h6>
+				<h6>Skincare</h6>
+				<h6>Bath & Body</h6>
+				<h6>Nails</h6>
+				<h6>Haircare</h6>
+				<h6>Tools & Accessories</h6>
+				<h6>Women's Fragrances</h6>
+				<h6>Men's Fragrances</h6>
+				<h6>Grooming For Men</h6>
+				<h6>Personal Hygiene</h6>
+			</div>
+		</div>
+		<div class="f3">
+			<h4><b>HOME-ITEM</b></h4>
+			<div class="fo3">
+				<h6>Kitchen & Dining</h6>
+				<h6>Decor</h6>
+				<h6>Home Furnishing</h6>
+				<h6>Storage & Organization</h6>
+				<h6>Smart Home and Appliances</h6>
+				<h6>Bath</h6>
+				<h6>Bedding</h6>
+				<h6>Furniture</h6>
+			</div>
+		</div>
+		<div class="f3">
+			<h4><b>Electronic device</b></h4>
+			<div class="fo3">
+				<h6>Phone</h6>
+				<h6>Laptop</h6>
+				<h6>Hadephone</h6>
+				<h6>Earbirds</h6>
+				<h6>Smart watch</h6>
+				<h6>Ipad</h6>
+				<h6>Tablates</h6>
+			</div>
+		</div>
+	</div>
+	<script>
+		document. getElementById("d"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d1"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d2"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d3"). onclick = function () {
+location. href = "detail.html";
+};
+
+		document. getElementById("d4"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d5"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d6"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d7"). onclick = function () {
+location. href = "detail.html";
+};
+
+		document. getElementById("d8"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d9"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d10"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d11"). onclick = function () {
+location. href = "detail.html";
+};
+
+		document. getElementById("d12"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d13"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d14"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d15"). onclick = function () {
+location. href = "detail.html";
+};
+
+		document. getElementById("d16"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d17"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d18"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d19"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d20"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d21"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d21"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d23"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("d24"). onclick = function () {
+location. href = "detail.html";
+};
+
+document. getElementById("s1"). onclick = function () {
+location. href = "store.html";
+};
+
+document. getElementById("s2"). onclick = function () {
+location. href = "store.html";
+};
+
+document. getElementById("s3"). onclick = function () {
+location. href = "store.html";
+};
+
+document. getElementById("s4"). onclick = function () {
+location. href = "store.html";
+};
+	</script>
+</body>
+</html>
